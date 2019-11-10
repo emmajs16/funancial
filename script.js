@@ -290,11 +290,13 @@ function winning() {
     again.onclick = function() {
         console.log("I WANT TO PLAY AGAIN")
         document.getElementById(sessionStorage.getItem("currentPosition")).style.background = "#BF988A";
+        document.getElementById(sessionStorage.getItem("currentPosition")).innerHTML = "";
         var currentPosition = parseInt(sessionStorage.getItem("currentPosition"));
         sessionStorage.setItem("currentPosition", 1);
         var currentPoints = parseInt(sessionStorage.getItem("totalPoints"));
         sessionStorage.setItem("totalPoints", 100);
         document.getElementById(sessionStorage.getItem("currentPosition")).style.background = "#BF7E82";
+        document.getElementById(sessionStorage.getItem("currentPosition")).innerHTML = '<img id = "icon" src="$.png" alt="">';
         document.getElementById("balance").innerHTML = sessionStorage.getItem("totalPoints");
         sessionStorage.setItem("totalRolls", 0);
         document.getElementById("totalRolls").innerHTML = sessionStorage.getItem("totalRolls");
