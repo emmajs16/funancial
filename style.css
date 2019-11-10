@@ -3,6 +3,11 @@ body {
     background-color: #F2EEEB;
     display: flex;
     font-family: 'Vollkorn', serif;
+    background-image: url("background.png");
+}
+#home{
+    background-color: #F2EEEB;
+    background-image: none;
 }
 h1{
     font-family: 'Unica One', cursive;
@@ -10,9 +15,12 @@ h1{
 .col {
     margin: 2px;
     height: 150px;
+    text-align: center;
 
 }
-
+.container{
+    margin-top: 10px;
+}
 .spaces {
     background-color: #BF988A;
     border: solid 2px #182622;
@@ -107,7 +115,7 @@ h1{
 .welcome{
     display: inline;
     text-align: center;
-    margin: 10%;
+    margin: 8%;
 }
 .welcome h1{
     font-size: 100px;
@@ -120,4 +128,24 @@ h1{
 width: 200px;
 height: 100px;
 font-size: 50px;
+}
+.welcome img{
+    width:40px;
+}
+.review{
+    display: inline;
+    text-align: center;
+    width: 100%;
+}
+.review h1{
+    font-size: 100px;
+}
+.review .btn{
+width: 200px;
+height: 100px;
+font-size: 50px;
+}
+#icon{
+    /* margin-top: px; */
+    width:40px;
 }
